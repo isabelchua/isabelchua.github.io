@@ -159,7 +159,7 @@ input[type=text], textarea {
 }
 
 @viewport {
-  width: device-width ;
-  zoom: 1.0 ;
+  width: extend-to-zoom ;
+  zoom: .5 ;
 } 
 

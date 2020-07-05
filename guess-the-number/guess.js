@@ -8,6 +8,8 @@ const startOver = document.querySelector('.res');
 const lowOrHi = document.querySelector('.lowOrHi');
 const errorMes = document.querySelector('.errorMes');
 
+//const lowOrHi2 = document.querySelector('.lowOrHi2');
+
 const p = document.createElement('p');
 let previousGuesses = [];
 let numGuesses = 1;
@@ -71,6 +73,7 @@ function displayGuesses(guess){
 function displayMessage(message){
 
       lowOrHi.innerHTML = `<h2 id="hiLo">${message}</h2>`
+    //lowOrHi2.innerHTML = `<h2 id="hiLo">${randomNumber}</h2>`
 
 }
 
