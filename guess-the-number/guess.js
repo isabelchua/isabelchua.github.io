@@ -4,16 +4,16 @@ const submit = document.querySelector('#subt');
 const userInput = document.querySelector('#guessField');
 const guessSlot = document.querySelector('.guesses');
 const remaining = document.querySelector('.lastResult');
-const startOver = document.querySelector('.resultParas');
+const startOver = document.querySelector('.res');
 const lowOrHi = document.querySelector('.lowOrHi');
 const errorMes = document.querySelector('.errorMes');
-const subt = document.querySelector('#subt');
+
 const p = document.createElement('p');
 let previousGuesses = [];
 let numGuesses = 1;
 let playGame = true;
 let numberFinal = 5;
-//var subth =document.getElementById('#subt');
+
 
 if (playGame){
   subt.addEventListener('click', function(e){
@@ -79,13 +79,9 @@ function displayError(errorm) {
 function endGame(){
   //Clear user input
   userInput.value = '';
-  //Disable user input button
- subt.setAttribute('disabled', 'disabled');
-  // subth.classList.remove('guessSubmit', 'guessSubmit2');
-  // subth.classList.add('guessSubmit2');
+  //Disable button
   userInput.setAttribute('disabled', '');
   //Display Start new Game Button
-        p.classList.add('button');
         p.innerHTML = `<h1 id="newGame">TRY AGAIN</h1>`
   startOver.appendChild(p);
   playGame = false;
@@ -96,9 +92,9 @@ function newGame(){
   const newGameButton = document.querySelector('#newGame');
   newGameButton.addEventListener('click', function(){
       //Starting a new game
-      randomNumber = parseInt((Math.random()*50)+1);
+      randomNumber = parseInt((Math.random()*30)+1);
       previousGuesses = [];
-      subth.classList.add('guessSubmit');
+      //subth.classList.add('guessSubmit');
       numGuesses = 1;
       guessSlot.innerHTML = '';
       lowOrHi.innerHTML = '';
