@@ -1,14 +1,22 @@
 html {
   font-family: 'Acme';
-
+  margin: 0 auto;
 }
 
 body {
   background-color: FFF;
-  width: 50%;
-  max-width: 90%;
+  width: 720px;
+  max-width: 100%;
   min-width: 480px;
   margin: 0 auto;
+
+}
+
+@media (max-width: 950px) {
+  body {
+  margin:0;
+  padding:0;
+  }
 }
 
 .lastResult {
@@ -159,7 +167,6 @@ input[type=text], textarea {
 }
 
 @viewport {
-  width: extend-to-zoom ;
-  zoom: .5 ;
+  margin: 0;
 } 
 
