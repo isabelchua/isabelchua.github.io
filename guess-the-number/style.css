@@ -11,7 +11,6 @@ body {
   margin: 0 auto;
 }
 
-
 .lastResult {
   color: white;
   padding: 7px;
@@ -48,21 +47,6 @@ button {
   outline: none;
   font-family: 'Acme';
 }
-
-/* #subt {
-  display: inline-block;
-  background-color: #f37826;
-  color: #FFF;
-  width: 300px;
-  height: 50px;
-  border-radius: 25px;
-  font-size: 30px;
-  border-style: none;
-  margin-top: 10px;
-  box-shadow: 0 8px 16px 0 rgba(0,0,0,0.2), 0 6px 20px 0 rgba(0,0,0,0.19);
-  outline: none;
-  font-family: 'Acme';
-} */
 
 .guessSubmit:hover {
   background-color: #FBAF3F;
@@ -127,6 +111,7 @@ button {
   font-size: 25px;
   border-radius: 80px;
   padding: 30px 0 50px 0px;
+  margin-top: 20px;
 }
 
 h1 {
