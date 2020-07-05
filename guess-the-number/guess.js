@@ -36,7 +36,7 @@ function validateGuess(guess){
       displayError('');
             previousGuesses.push(guess);
       //game over
-      if (numGuesses === numberFinal){
+      if ((numGuesses === numberFinal)&&(guess != randomNumber)) {
           displayGuesses(guess);
           displayMessage(`Sorry! The number was <span id="red">${randomNumber}</span>`);
           endGame();
@@ -69,7 +69,9 @@ function displayGuesses(guess){
 }
 
 function displayMessage(message){
+
       lowOrHi.innerHTML = `<h2 id="hiLo">${message}</h2>`
+
 }
 
 function displayError(errorm) {
