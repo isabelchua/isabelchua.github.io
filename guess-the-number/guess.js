@@ -32,7 +32,7 @@ function validateGuess(guess){
   } else if (guess > 30){
     displayError(`Please enter a number lower than 30!`);
   } else {
-      //record of number of attempted gu
+      //record the number of guesses
       displayError('');
             previousGuesses.push(guess);
       //game over
