@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <link rel="stylesheet" type="text/css" href="style.css">
+  <link href="https://fonts.googleapis.com/css?family=Acme|Lobster" rel="stylesheet">
+  <meta name="viewport" content="width=device-width, initial-scale=.6, maximum-scale=.55, minimum-scale=.1"> 
+  <title>Rock Paper Scissors</title>
+</head>
+<body>
+  <div id="wrapper">
+
+    <label for="guessField" id="guess"><h1>Rock Paper or Scissors?</h1></label>
+    <input type="image" id="rock" src="rock.png" class="pick" onclick="rockPick()">
+    <input type="image" id="papper" src="paper.png" class="pick" onclick="paperPick()">
+    <input type="image" id="scissors" src="scissors.png" class="pick" onclick="scissorsPick()">
+
+
+  <div class="res">
+    <p class="winText"></p>
+    <p id="dpick"></p>
+    <div id="compuP"></div>
+    <h2 class="winOrlose"></h2>
+    <p >Your Score: <span class="win">0</span></p>
+    <p>Computer: <span class="lose">0</span></p>  
+    <p>Draw: <span class="draw">0</span></p>  
+    <p>Number of Games Played: <span class="numGames">0</span></p>
+    
+  </div>
+</div>
+  <script src="script.js"></script>
+</body>
+</html>

@@ -4,7 +4,7 @@ html {
 }
 
 body {
-  background-color: FFF;
+  background-color: #FFF;
   width: 720px;
   min-width: 480px;
   margin: 0 auto;
@@ -16,6 +16,18 @@ body {
   margin:0;
   padding:0;
   }
+}
+
+#wrapper {
+  background-color: #64A2B2;
+  box-sizing: border-box;
+  text-align: center;
+  width: 720px;
+  color: #fff;
+  font-size: 25px;
+  border-radius: 80px;
+  padding: 30px 0 50px 0px;
+  margin-top: 20px;
 }
 
 .lastResult {
@@ -90,17 +102,7 @@ button {
   text-align: center;
 }
 
-#wrapper {
-  background-color: #64A2B2;
-  box-sizing: border-box;
-  text-align: center;
-  width: 720px;
-  color: #fff;
-  font-size: 25px;
-  border-radius: 80px;
-  padding: 30px 0 50px 0px;
-  margin-top: 20px;
-}
+
 
 h1 {
   font-family: 'Lobster', sans-serif;

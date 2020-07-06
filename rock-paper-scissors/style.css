@@ -1,0 +1,59 @@
+html {
+  font-family: 'Acme';
+  margin: 0 auto;
+}
+
+body {
+  background-color: #F181B3;
+  width: 720px;
+  min-width: 480px;
+  margin: 0 auto;
+
+}
+
+@media (max-width: 950px) {
+  body {
+  margin:0;
+  padding:0;
+  }
+}
+
+#wrapper {
+  border-color: #4FB547;
+  border-width: 30px;
+  border-style: solid;
+  background-color: #FFF;
+  box-sizing: border-box;
+  text-align: center;
+  width: 720px;
+  color: #6B6B6B;
+  font-size: 25px;
+  border-radius: 80px;
+  padding: 30px 0 50px 0px;
+  margin-top: 20px;
+}
+
+#lo, #red {
+  color: #6c1ed3;
+}
+
+#green {
+  color: darkgreen;
+}
+
+#red2 {
+  color: red;
+}
+
+.pick {
+  border-radius: 30%;
+
+}
+
+.pick:hover {
+
+  outline-style: dotted;
+  outline-width:  6px ;
+  outline-color: #D15EA8;
+  filter: brightness(2);
+}
