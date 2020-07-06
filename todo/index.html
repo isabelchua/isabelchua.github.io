@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <link rel="stylesheet" type="text/css" href="style.css">
+  <link href="https://fonts.googleapis.com/css?family=Acme|Lobster" rel="stylesheet">
+  <meta name="viewport" content="width=device-width, initial-scale=.6, maximum-scale=.55, minimum-scale=.1"> 
+  <title>TODO APP</title>
+</head>
+<body>
+  <div id="wrapper">
+    <h1>TODO LIST</h1>
+    <form id="todoForm">
+      <input type="text" placeholder="Enter TODO" id="todoInput">
+      <button id="add" type="button" onclick="todoList()">ADD</button>
+    </form>
+		<div class="container">
+      <!-- TODO LIST -->
+      <h3>things to do</h3>
+			<ul class="item" id="todoList"></ul>
+
+      <!-- Completed tasks -->
+      <h3>completed</h3>
+			<ul class="item" id="doneList"></ul>
+		</div>
+
+  </div>
+<script src="script.js"></script>
+</body>
+</html>

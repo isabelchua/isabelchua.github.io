@@ -1,0 +1,33 @@
+html {
+  font-family: 'Acme';
+  margin: 0 auto;
+}
+
+body {
+  background-color: #313131;
+  width: 720px;
+  min-width: 480px;
+  margin: 0 auto;
+
+}
+
+@media (max-width: 950px) {
+  body {
+  margin:0;
+  padding:0;
+  }
+}
+
+#wrapper {
+  border-color: #1a1a1a;
+  border-width: 10px;
+  border-style: solid;
+  background-color: rgb(226, 220, 193);
+  box-sizing: border-box;
+  text-align: left;
+  width: 720px;
+  color: #6B6B6B;
+  font-size: 25px;
+  padding: 30px 30px 50px 30px;
+  margin-top: 20px;
+}
