@@ -1,5 +1,5 @@
 html {
-  font-family: 'Acme';
+  font-family:  'Chelsea Market';
   margin: 0 auto;
 }
 
@@ -26,8 +26,70 @@ body {
   box-sizing: border-box;
   text-align: left;
   width: 720px;
-  color: #6B6B6B;
+  color: #474747;
   font-size: 25px;
-  padding: 30px 30px 50px 30px;
+  padding: 30px 60px 130px 60px;
   margin-top: 20px;
+  min-height: 800px;
+}
+
+h3 {
+  font-size: larger;
+}
+
+#todoInput {
+  display: block;
+  float: left;
+  border: solid #474747 5px;
+  height: 40px;
+  width: 80%;
+  padding: 10px;
+  font-size: 1em;
+  font-family:  'Chelsea Market';
+}
+
+#todoForm {
+  display: block;
+  float: left;
+  width: 100%;
+  margin-bottom: 50px;
+}
+
+#todoList {
+  margin: 0;
+  padding: 0;
+}
+
+li {
+  padding: 20px;
+  border-bottom: solid #aba484 5px;
+  width: 90%;
+  list-style-type: none;
+}
+
+.errorMes {
+  color: red;
+  font-size: 20px;
+  margin-top: 20px;
+  height: 40px;
+}
+
+::placeholder {
+  color: #a5a5a5;
+}
+
+#add {
+  border-radius: 50px;
+  display: block;
+  float: left;
+  margin-left: 15px;
+  box-shadow: 0 8px 16px 0 rgba(0,0,0,0.5), 0 6px 20px 0 rgba(0,0,0,0.19);
+  opacity: 1;
+  transition: 0.2s;
+  outline: none;
+}
+
+#add:hover {
+  box-shadow: 0 8px 16px 0 rgba(0,0,0,0.14), 0 6px 20px 0 rgba(0,0,0,0.122);
+  opacity: .9;
 }

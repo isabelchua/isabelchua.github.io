@@ -46,14 +46,9 @@ body {
 }
 
 .pick {
-  border-radius: 30%;
-
+  transition: 0.4s;
 }
 
 .pick:hover {
-
-  outline-style: dotted;
-  outline-width:  6px ;
-  outline-color: #D15EA8;
-  filter: brightness(2);
+  opacity: .5;
 }

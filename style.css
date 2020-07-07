@@ -1,0 +1,48 @@
+html {
+  font-family:  'Chelsea Market';
+  margin: 0 auto;
+}
+
+body {
+  background-color: #FFF;
+  width: 100%;
+  min-width: 480px;
+  margin: 0 auto;
+
+}
+
+@media (max-width: 950px) {
+  body {
+  margin:0;
+  padding:0;
+  }
+}
+
+#wrapper {
+  background-color: rgb(240, 240, 240);
+  text-align: left;
+  width: 90%;
+  color: #474747;
+  font-size: 19px;
+  padding: 30px 60px 130px 60px;
+  margin: 0 auto;
+  min-height: 800px;
+}
+
+#avatar {
+  display: block;
+  float: left;
+  width: 30%;
+}
+
+.pic {
+  width: 100%;
+  height: auto;
+}
+
+#bio {
+  display: block;
+  float:left;
+  margin-left: 30px;
+  width: 40%;
+}
