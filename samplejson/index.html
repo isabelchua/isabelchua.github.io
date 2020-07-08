@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+   <title>sample</title>
+</head>
+<body>
+  <div id="wrapper">
+    <h2 id="title">Local Storage - Javascript - dcode</h2>
+    <fieldset>
+      <legend>Input</legend>
+      <input id = "inputName" type="text">
+      <input id="inputLast" type="text">
+      <input id="inputEmail" type="text">
+    
+      <button type="button" id="btnEnter">enter</button>
+
+      <button type="button" id="btnClear">CLEAR</button>
+    </fieldset>
+
+    <fieldset>
+      <legend>Storage</legend>
+        <div id="listOutput"></div>
+    </fieldset>
+
+
+  </div>
+<script>
+
+  const inputName = document.getElementById("inputName");
+  const inputLast = document.getElementById("inputLast");
+  const inputEmail = document.getElementById("inputEmail");
+
+  const btnEnter = document.getElementById("btnEnter");
+  const listOutput = document.getElementById("listOutput");
+
+  btnEnter.onclick = function() {
+    const nameValue = inputName.value;
+    const lastValue = inputLast.value;
+    const emailValue = inputEmail.value;
+
+    // console.log(nameValue);
+    // console.log(value);
+
+    if (nameValue && lastValue && emailValue) {
+      localStorage.setItem(nameValue, lastValue, emailValue);
+      location.reload();
+    }
+  };
+
+  btnClear.onclick = function() {
+    localStorage.clear()
+    location.reload();
+  };
+
+
+ // localStorage.removeItem("nameValue");
+
+  for (let i=0; i < localStorage.length; i++) {
+    const nameValue = localStorage.key(i);
+    const lastValue = localStorage.getItem(nameValue);
+    const emailValue = localStorage.getItem(nameValue);
+
+    listOutput.innerHTML += `name: ${nameValue} |<br> lastname: ${lastValue} |<br> email: ${emailValue}<br/><br>`;
+  }
+
+  
+
+</script>
+</body>
+</html>

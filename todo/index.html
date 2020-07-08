@@ -7,17 +7,24 @@
   <meta name="viewport" content="width=device-width, initial-scale=.6, maximum-scale=.55, minimum-scale=.1"> 
   <title>TODO APP</title>
 </head>
-<body>
+<body onload=getTime();>
   <div id="wrapper">
+    <span id='currentTime' ></span>
+    <div id="clear"><a href="">X</a></div>
     <h1>MY TODO LIST</h1>
     <div id="todoForm">
       <input type="text" placeholder="Enter TODO" id="todoInput">
-      <input type="image" id="add" src="add.png" onclick="todoList()">
+      <input type="image" id="btnAdd" src="add.png"  >
+        
       <div class="errorMes"></div>
     </div>
 		<div class="container">
-      <h3>Things to do</h3>
-      <ul class="item" id="todoList"></ul>
+          <div class="content">
+            <ul id="list">
+
+            </ul>
+          </div>
+
   	</div>
   </div>
 <script src="script.js"></script>
