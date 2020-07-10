@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <link rel="stylesheet" type="text/css" href="style.css">
+  <link href="https://fonts.googleapis.com/css?family=Chelsea Market" rel="stylesheet">
+  <meta name="viewport" content="width=device-width, initial-scale=.9, maximum-scale=.9, minimum-scale=.5"> 
+  <title>HANGMAN</title>
+</head>
+<body onload=displayWordFunction();>
+  <div id="wrapper">
+    <h1>Hangman (Animals)</h1>
+    <div id="displayLetters"></div>
+
+    <div class="display">
+      <span id="displayWord"></span>
+      <span id="displayWord2"></span>
+      <span><h3 id="errorM">NUMBER OF GUESSES LEFT: 10</h3></span>
+      <div id="wrapper2"><button id="newGame" onclick="newGame()">New Game</button></div>
+    </div>
+    <div id="hangman"></div>
+
+    
+
+  </div>
+<script src="script.js"></script>
+</body>
+</html>
