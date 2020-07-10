@@ -53,6 +53,7 @@ let usedLetter2 = [];
 var ctr = 0;
 //check to see which letter was clicked
 displayhtmlLetters.addEventListener("click", function(event) {
+  try {
   event.preventDefault();
   displayWord2.innerHTML = ``;
   if (gameOVER == true) { return; }
@@ -107,6 +108,9 @@ displayhtmlLetters.addEventListener("click", function(event) {
   //refresh display WORD
   displayWord.innerHTML = "";
   displayWordFunction();
+
+
+} catch (e) { }
 });
 
 
