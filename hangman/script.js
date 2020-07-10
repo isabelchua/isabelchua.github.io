@@ -1,8 +1,7 @@
 
 var words = ["DOG", "ELEPHANT", "ZEBRA", "OCTOPUS", "LION", "TIGER", "TURTLE", "BEAR", "SNAKE", "WOLF", "CROCODILE", "CAMEL", "CHICKEN", "SHARK"];
 let rand = parseInt((Math.random()*words.length));
-console.log(rand);
-//var words = { "word": ["dog", "cat"]};
+
 var numberOfGuessLeft = 10;
 var letterGuess;
 
@@ -23,10 +22,10 @@ var displayLetters = { "letters":
                 ["A", "B", "C", "D", "E", "F", "G", "H", "I", "J", "K", "L", "M", "N", "O", "P", "Q", "R","S", "T", "U", "V", "W", "X", "Y", "Z"]}
 
 for (i in displayLetters.letters) {
-  const listValue = `<span class="letterOuter"><a class='letterButton' id="${displayLetters.letters[i]}" job="${displayLetters.letters[i]}" href="#" disabled>${displayLetters.letters[i]}</a></span>`;
+  const theWORD = `<span class="letterOuter"><a class='letterButton' id="${displayLetters.letters[i]}" job="${displayLetters.letters[i]}" href="#" disabled>${displayLetters.letters[i]}</a></span>`;
 
-  const addToEndList = "beforeend";
-  displayhtmlLetters.insertAdjacentHTML(addToEndList, listValue);
+  const refreshWORD = "beforeend";
+  displayhtmlLetters.insertAdjacentHTML(refreshWORD, theWORD);
 }
 
 var displayWord2 = document.getElementById("displayWord2");
@@ -35,8 +34,6 @@ const errorM = document.getElementById("errorM");
 
 
 var gameOVER = false;
-//var theLetters = words[0].substring(1,1);
-//words[0].indexOf(letterPressed);
 
 var blankShow = [];
 
@@ -47,21 +44,18 @@ for (let i = 0; i < words[rand].length ; i++) {
 
 var winCTR = 0;
 
-//used letter
-//var usedLetter = [];
-
 let usedLetter2 = [];
 
 var ctr = 0;
 //check to see which letter was clicked
 displayhtmlLetters.addEventListener("click", function(event) {
- // event.preventDefault();
+ //event.preventDefault();
   displayWord2.innerHTML = ``;
   if (gameOVER == true) { return; }
   const letterPressed = event.target // return the clicked clickLetter inside list
   const letterValue = letterPressed.attributes.job.value; // the letter of pressed
   
-  //usedLetter[ctr] = letterValue;
+  //pressed letter!
   usedLetter2.push(letterValue);
   
   //check to see is letter was already used
@@ -89,9 +83,6 @@ displayhtmlLetters.addEventListener("click", function(event) {
           winGAME();
         }
       }
-      else {
-
-      }
     }
   } else {
     numberOfGuessLeft--;
@@ -106,37 +97,27 @@ displayhtmlLetters.addEventListener("click", function(event) {
   //refresh display WORD
   displayWord.innerHTML = "";
   displayWordFunction();
-
 });
-
-function doNothing() {
-  //exit
-}
 
 //show the hangman word
 function displayWordFunction() {
   for (let i = 0; i < words[rand].length ; i++) {
-    const listValue = `<span class="left space"> ${blankShow[i]} </span>`;
+    const theWORD = `<span class="left space"> ${blankShow[i]} </span>`;
  
-    const addToEndList = "beforeend";
-    displayWord.insertAdjacentHTML(addToEndList, listValue);
+    const refreshWORD = "beforeend";
+    displayWord.insertAdjacentHTML(refreshWORD, theWORD);
   }
 }
-
-
 
 function endGAME() {
   errorM.innerHTML = `<h1 class="red">GAME OVER!<br>The word was ${words[rand]}!</h1>`;
   gameOVER = true;
 }
 
-
-
 function winGAME() {
   // print game over
   errorM.innerHTML = `<h1 class="red">YOU GUESSED THE WORD!</h1>`;
   gameOVER = true;
-  //put play again button
 }
 
 function newGame(){
@@ -147,7 +128,7 @@ function newGame(){
       numberOfGuessLeft = 10;
       winCTR = 0;
       blankShow = [];
-      ctr =0;
+      ctr = 0;
       usedLetter2 = [];
       gameOVER = false;
       for (let i = 0; i < words[rand].length ; i++) {
