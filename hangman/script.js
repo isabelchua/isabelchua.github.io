@@ -32,9 +32,6 @@ for (i in displayLetters.letters) {
   displayhtmlLetters.insertAdjacentHTML(refreshWORD, theWORD);
 }
 
-
-
-
 var displayWord2 = document.getElementById("displayWord2");
 var displayWord = document.getElementById("displayWord");
 const errorM = document.getElementById("errorM");
@@ -52,9 +49,6 @@ for (let i = 0; i < words[rand].length ; i++) {
 var winCTR = 0;
 
 let usedLetter2 = [];
-
-//disable Letter
-
 
 var ctr = 0;
 //check to see which letter was clicked
@@ -116,12 +110,6 @@ displayhtmlLetters.addEventListener("click", function(event) {
 });
 
 
-
-
-
-
-
-
 //show the hangman word
 function displayWordFunction() {
   for (let i = 0; i < words[rand].length ; i++) {
@@ -159,11 +147,8 @@ function newGame(){
       }
 
       for (i in displayLetters.letters) {
-
-      
         removeDisabled = document.getElementById(displayLetters.letters[i]);
         removeDisabled.classList.remove("disabled");
-      
       }
 
 
