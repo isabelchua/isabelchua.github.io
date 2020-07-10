@@ -11,9 +11,7 @@ const startOver = document.querySelector('.res');
 let playGame = true;
 const submit = document.querySelector('#subt');
 
-
 //var displayLetters = document.getElementById("displayLetters");
-
 
 let storageTodo = localStorage.getItem("TODO_LIST");
 
@@ -27,7 +25,6 @@ for (i in displayLetters.letters) {
 
   const theWORD = `<span class="letterOuter"><a class='letterButton' id="${displayLetters.letters[i]}" job="${displayLetters.letters[i]}" href="#">${displayLetters.letters[i]}</a></span>`;
 
-
   const refreshWORD = "beforeend";
   displayhtmlLetters.insertAdjacentHTML(refreshWORD, theWORD);
 }
@@ -35,7 +32,6 @@ for (i in displayLetters.letters) {
 var displayWord2 = document.getElementById("displayWord2");
 var displayWord = document.getElementById("displayWord");
 const errorM = document.getElementById("errorM");
-
 
 var gameOVER = false;
 
@@ -103,16 +99,12 @@ displayhtmlLetters.addEventListener("click", function(event) {
       return;
     }
   }
-
   ctr++;
   //refresh display WORD
   displayWord.innerHTML = "";
   displayWordFunction();
-
-
 } catch (e) { }
 });
-
 
 //show the hangman word
 function displayWordFunction() {
@@ -149,12 +141,9 @@ function newGame(){
       for (let i = 0; i < words[rand].length ; i++) {
         blankShow[i] = " _ ";
       }
-
       for (i in displayLetters.letters) {
         removeDisabled = document.getElementById(displayLetters.letters[i]);
         removeDisabled.classList.remove("disabled");
       }
-
-
       displayWordFunction();
 }
