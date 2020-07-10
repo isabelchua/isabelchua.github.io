@@ -2,7 +2,7 @@
 var words = ["DOG", "ELEPHANT", "ZEBRA", "OCTOPUS", "LION", "TIGER", "TURTLE", "BEAR", "SNAKE", "WOLF", "CROCODILE", "CAMEL", "CHICKEN", "SHARK"];
 let rand = parseInt((Math.random()*words.length));
 
-var numberOfGuessLeft = 10;
+var numberOfGuessLeft = 7;
 var letterGuess;
 
 const displayhtmlLetters = document.getElementById("displayLetters");
@@ -21,12 +21,19 @@ var i = "";
 var displayLetters = { "letters":
                 ["A", "B", "C", "D", "E", "F", "G", "H", "I", "J", "K", "L", "M", "N", "O", "P", "Q", "R","S", "T", "U", "V", "W", "X", "Y", "Z"]}
 
+var removeDisabled;
+
 for (i in displayLetters.letters) {
+
   const theWORD = `<span class="letterOuter"><a class='letterButton' id="${displayLetters.letters[i]}" job="${displayLetters.letters[i]}" href="#">${displayLetters.letters[i]}</a></span>`;
+
 
   const refreshWORD = "beforeend";
   displayhtmlLetters.insertAdjacentHTML(refreshWORD, theWORD);
 }
+
+
+
 
 var displayWord2 = document.getElementById("displayWord2");
 var displayWord = document.getElementById("displayWord");
@@ -150,5 +157,15 @@ function newGame(){
       for (let i = 0; i < words[rand].length ; i++) {
         blankShow[i] = " _ ";
       }
+
+      for (i in displayLetters.letters) {
+
+      
+        removeDisabled = document.getElementById(displayLetters.letters[i]);
+        removeDisabled.classList.remove("disabled");
+      
+      }
+
+
       displayWordFunction();
 }
