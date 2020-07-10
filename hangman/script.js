@@ -52,7 +52,7 @@ let usedLetter2 = [];
 var ctr = 0;
 //check to see which letter was clicked
 displayhtmlLetters.addEventListener("click", function(event) {
- //event.preventDefault();
+  event.preventDefault();
   displayWord2.innerHTML = ``;
   if (gameOVER == true) { return; }
   const letterPressed = event.target // return the clicked clickLetter inside list
