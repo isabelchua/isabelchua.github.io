@@ -22,7 +22,7 @@ var displayLetters = { "letters":
                 ["A", "B", "C", "D", "E", "F", "G", "H", "I", "J", "K", "L", "M", "N", "O", "P", "Q", "R","S", "T", "U", "V", "W", "X", "Y", "Z"]}
 
 for (i in displayLetters.letters) {
-  const theWORD = `<span class="letterOuter"><a class='letterButton' id="${displayLetters.letters[i]}" job="${displayLetters.letters[i]}" href="#" disabled>${displayLetters.letters[i]}</a></span>`;
+  const theWORD = `<span class="letterOuter"><a class='letterButton' id="${displayLetters.letters[i]}" job="${displayLetters.letters[i]}" href="#">${displayLetters.letters[i]}</a></span>`;
 
   const refreshWORD = "beforeend";
   displayhtmlLetters.insertAdjacentHTML(refreshWORD, theWORD);
@@ -46,6 +46,9 @@ var winCTR = 0;
 
 let usedLetter2 = [];
 
+//disable Letter
+
+
 var ctr = 0;
 //check to see which letter was clicked
 displayhtmlLetters.addEventListener("click", function(event) {
@@ -58,9 +61,15 @@ displayhtmlLetters.addEventListener("click", function(event) {
   //pressed letter!
   usedLetter2.push(letterValue);
   
+  if (letterValue) {
+    var disabled = document.getElementById(letterValue);
+    disabled.classList.add("disabled");
+    //disableLetter(letterValue);
+  }
+
   //check to see is letter was already used
   for ( let i = 0 ; i < (usedLetter2.length)-1 ; i++ ){
-    console.log("guess letter " + usedLetter2[i]);
+    //console.log("guess letter " + usedLetter2[i]);
     if (usedLetter2[i] == letterValue){
       displayWord2.innerHTML = `<span class="red">` + letterValue + " was already used!</span>";
       //exit 
@@ -75,8 +84,8 @@ displayhtmlLetters.addEventListener("click", function(event) {
     for ( let i = 0 ; i < words[rand].length ; i++ ) {
       if (letterValue == words[rand].charAt(i)){
         winCTR++;
-        console.log("number of right guesses " + winCTR);
-        console.log("word length is " + (words[rand].length)-1);
+        //console.log("number of right guesses " + winCTR);
+        //console.log("word length is " + (words[rand].length)-1);
         blankShow[i] = letterValue;
         //if counter reaches same length with word
         if (winCTR > ((words[rand].length)-1)) {
@@ -98,6 +107,13 @@ displayhtmlLetters.addEventListener("click", function(event) {
   displayWord.innerHTML = "";
   displayWordFunction();
 });
+
+
+
+
+
+
+
 
 //show the hangman word
 function displayWordFunction() {

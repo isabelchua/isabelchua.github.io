@@ -13,6 +13,12 @@ body {
 
 }
 
+.disabled {
+  pointer-events: none;
+  background-color: rgb(68, 68, 68) !important;
+  border: 4px rgb(53, 53, 53) solid !important;
+}
+
 @media (max-width: 950px) {
   body {
   margin:0;
