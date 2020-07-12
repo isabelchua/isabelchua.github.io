@@ -1,13 +1,16 @@
+/* *{
+  margin:0;
+  padding:0;
+} */
 html {
   font-family:  'Chelsea Market';
-  margin: 0 auto;
+  line-height: 1.8;
+  font-size: 1.1em;
+  color: rgb(88, 88, 88)
 }
 
 body {
   background-color: #FFF;
-  width: 100%;
-  min-width: 480px;
-  margin: 0 auto;
 
 }
 
@@ -18,21 +21,47 @@ body {
   }
 }
 
-#wrapper {
+#nav-bar li {
+  list-style: none;
+  float: left;
+  margin: 0 15px;
+}
+
+#nav-bar li a {
+  text-decoration: none;
+}
+
+h1, h3 {
+  margin: 0;
+}
+
+.flexbox-container {
+  display: flex;
+  justify-content: center;
+  align-items: stretch;
+}
+
+.wrapper {
   background-color: rgb(240, 240, 240);
-  text-align: left;
+  /* text-align: left;
   width: 90%;
   color: #474747;
   font-size: 19px;
   padding: 30px 60px 130px 60px;
   margin: 0 auto;
-  min-height: 800px;
+  min-height: 800px; */
+  display: flex;
+  flex-flow: row wrap;
+  align-items: stretch;
+  width: 1100px;
+  flex-wrap: wrap;
 }
 
 #avatar {
-  display: block;
-  float: left;
-  width: 30%;
+flex-grow: 1;
+min-width: 270px;
+max-width: 30%;
+  /* width: 30%; */
 }
 
 .pic {
@@ -40,9 +69,51 @@ body {
   height: auto;
 }
 
-#bio {
-  display: block;
-  float:left;
-  margin-left: 30px;
-  width: 40%;
+.info {
+  margin: 0px 30px;
+  width: 50%;
+  flex: 1 1 300px;
+  align-self: center;
 }
+
+.section {
+  width: 330px;
+  margin: 10px;
+}
+
+.heading {
+  display: block;
+  width: 1200px;
+  flex: 1 1 1200px;
+  /* flex-flow: row wrap; */
+}
+
+.sm {
+  display: block;
+  height: 54px;
+  width: 54px;
+  margin: 0 10px;
+  transition: .3s;
+}
+
+#fb {
+  background-image: url("img/fb.png");
+}
+
+#ig {
+  background-image: url("img/ig.png");
+}
+
+#gh {
+  background-image: url("img/gh.png");
+}
+
+a {
+  text-decoration: none;
+  color: rgb(88, 88, 88);
+}
+
+a:hover {
+  opacity: .7;
+}
+

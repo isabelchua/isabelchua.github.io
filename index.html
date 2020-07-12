@@ -1,53 +1,115 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
   <meta charset="UTF-8">
+
+  <script src="https://kit.fontawesome.com/d1f2857b68.js" crossorigin="anonymous"></script>
+
   <link rel="stylesheet" type="text/css" href="style.css">
+
   <link href="https://fonts.googleapis.com/css?family=Chelsea Market" rel="stylesheet">
-  <meta name="viewport" content="width=device-width, initial-scale=.6, maximum-scale=.55, minimum-scale=.1"> 
+  <meta name="viewport" content="width=device-width, initial-scale=.6, maximum-scale=.55, minimum-scale=.1">
 </head>
-<title>Monica Isabela Tong</title>
-<script src="https://code.jquery.com/jquery-3.3.1.js" integrity="sha256-2Kok7MbOyxpgUVvAk/HJ2jigOSYS2auK4Pfzbm7uH60=" crossorigin="anonymous"></script>
-<script> 
-$(function(){
-  $("#header").load("header.html"); 
-});
-</script> 
+<title>Isabel Chua</title>
+<script src="https://code.jquery.com/jquery-3.3.1.js" integrity="sha256-2Kok7MbOyxpgUVvAk/HJ2jigOSYS2auK4Pfzbm7uH60="
+  crossorigin="anonymous"></script>
+<script>
+  $(function () {
+    $("#header").load("header.html");
+  });
+</script>
 </head>
+
 <body>
-<div id="header"></div>
-<div id="wrapper">
-<div id="avatar">
-<img src="me.jpg" class="pic" alt="mt_avatar">
+  <div class="flexbox-container">
+<div id="nav-bar"><li><a href="#">Home</a></li><li><a href="#">Portfolio</a></li><li><a href="#">More Info</a></li><li><a href="#">Contact Me</a></li></div>
 </div>
-<div id="bio">
-<h1>Isabel Chua</h1>
-<p>I’m a graduate in Computer Science with 6 years of experience in Web development. I design, build immersive and beautiful web applications through crafted code. I have won various competitions in coding and in art. I’m a jack of all trades kind of person. 
-  <br><br>
-Throughout my career, I’ve been reaching goals and exceeding expectations. I am always striving for the best. I am curious, a problem solver, and a continuous learner and I’m confident that you would want me in your team.
-<br><br>
-So if you are looking for a hard-working, communicative & caring developer? I am super excited to work on ambitious projects with you. </p>
-</div>
-</div>
-<div id="wrapper">
-<h2>What I do</h2>
-  <div class="section">
-    <h3>Web Development</h3>
-    <p></p>
+
+  <section id="bio" class="flexbox-container">
+    <div id="header"></div>
+    <div class="wrapper">
+
+      <div class="info">
+        <h1>Isabel</h1>
+        <h3>Web Developer based in San Francisco, California</h3>
+        <p>Making people happy brings joy to me! I love creating things, I am a curious person by nature, being productive and I love learning! I’m a graduate in Computer Science with 6 years of experience in Web development. I design, build immersive and
+          beautiful web applications through crafted code. I have won various competitions in coding and in art. I’m a
+          jack of all trades kind of person.
+          <br><br>
+          Throughout my career, I’ve been reaching goals and exceeding expectations. I am always striving for the best.
+           I am a problem solver and I’m confident that you would want me in your team!
+          <br><br>
+          Looking for a hard-working, communicative & devoted developer? I am super excited to start working
+          on challenging projects! </p>
+        <p>My Resume</p>
+      </div>
+      <div id="avatar">
+        <img src="img/me.jpg" class="pic" alt="mt_avatar">
+      </div>
     </div>
-  <div class="section">
-    <h3>Web Design</h3>
-    <p></p>
+  </section>
+
+  <div class="flexbox-container">
+    <div class="wrapper">
+      <h2 class="heading">What I do</h2>
+      <div class="section">
+        <h3>Web Development</h3>
+        <p>Develop websites for 6 years using wordpress for small business owners.</p>
+      </div>
+      <div class="section">
+        <h3>Web Design</h3>
+        <p>UX/UI Websites</p>
+      </div>
+      <div class="section">
+        <h3>SQL</h3>
+        <p>database</p>
+      </div>
     </div>
-  <div class="section">
-    <h3>Web Development</h3>
-    <p></p>
-    </div>
-</div>
-<div id="wrapper">
-  <h2>My Social Media</h2>
-  <div id="fb" class="sm"><a href="https://www.facebook.com/pinkchocobo"></a></div>
   </div>
-<div id="footer"></div>
+  <div class="flexbox-container">
+    <div class="wrapper">
+      <h2 class="heading">Other Skills</h2>
+      <div class="section">
+        <h3>Photography</h3>
+        <p>I love taking photos! You can check out more of my work <a href="https://www.flickr.com/photos/185150372@N03/with/48999263883/">here</a></p>
+      </div>
+      <div class="section">
+        <h3>Sculpting</h3>
+        <p>Creating Sculptures, you can check out more of my creations <a href="https://www.instagram.com/crafts.by.isabel/">here</a></p>
+      </div>
+      <div class="section">
+        <h3>Video Editing</h3>
+        <p>I have a passion for creating and editing videos, link to my video edit</p>
+      </div>
+    </div>
+  </div>
+  <div class="flexbox-container">
+    <div class="wrapper">
+      <h2 class="heading">Hobbies</h2>
+      <div class="section">
+        <h3>Games</h3>
+        <p></p>
+      </div>
+      <div class="section">
+        <h3>Powerlifting</h3>
+        <p></p>
+      </div>
+      <div class="section">
+        <h3>Running</h3>
+        <p></p>
+      </div>
+    </div>
+  </div>
+  <div class="flexbox-container">
+    <div class="wrapper">
+      <h2 class="heading">Connect</h2>
+      <div><a id="fb" class="sm" href="https://www.facebook.com/pinkchocobo"></a></div>
+      <div><a id="ig" class="sm" href="https://www.instagram.com/crafts.by.isabel/"></a></div>
+      <div><a id="gh" class="sm" href="https://github.com/isabelchua"></a></div>
+    </div>
+  </div>
+  <div id="footer"></div>
 </body>
+
 </html>

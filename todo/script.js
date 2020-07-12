@@ -14,25 +14,24 @@ function getTime() {
   var hour = time.getHours();
   var minute = time.getMinutes();
   var second = time.getSeconds();
-  if (hour < 10 ){ 
+  if (hour < 10 ) { 
     hour ='0'+ hour; 
   }
-    if (hour > 12) {
+  if (hour > 12) {
       hour = hour - 12;
       amPM = 'PM';
-    }
-    else {
+  }
+  else {
       amPM = 'AM';
-    }
+  }
   
   if(minute < 10 ) { minute= '0' + minute; }
   if(second < 10){ second= '0' + second; }
-  var timeNOW = today.toLocaleDateString("en-US", options) + '   ' + hour + ':' + minute +':'+ second + " <span class='right'>" + amPM + "</span>"
+  var timeNOW = today.toLocaleDateString("en-US", options) + ' ' + hour + ':' + minute +':'+ second + " <span class='right'>" + amPM + "</span>"
 
   document.getElementById('currentTime').innerHTML = timeNOW;
   showTime();
 }
-
 
 //assign variables
 var btnAdd = document.getElementById("btnAdd");
@@ -94,7 +93,7 @@ function addToList() {
           id : id,
           checkValue : false,
           trash : false
-      });
+        });
   
   // add input to localstorage 
   localStorage.setItem("TODO_LIST", JSON.stringify(todoLIST));
@@ -103,7 +102,6 @@ function addToList() {
 
   document.getElementById('todoInput').value = "";
 }
-
 
 //display list of TODOs
 function addToDo(todoInput, id, checkValue, trash){
@@ -114,14 +112,13 @@ function addToDo(todoInput, id, checkValue, trash){
   const LINE = checkValue ? LINETHR : "";
   
   const listValue = `<li class="item">
-                    <span class="inlb ${checkOrUncheck}" job="checkValue" id="${id}"></span>
+                    <span class="inlb ${checkOrUncheck}" che="checkValue" id="${id}"></span>
                     <span class="inlb text ${LINE}">${todoInput}</span>
-                    <span class="right trash" job="removeValue" id="${id}"></span></li>`;
+                    <span class="right trash" che="removeValue" id="${id}"></span></li>`;
   
-  const position = "beforeend";
-  list.insertAdjacentHTML(position, listValue);
+  const addToEndList = "beforeend";
+  list.insertAdjacentHTML(addToEndList, listValue);
 }
-
 
 // clear localstorage
 clear.addEventListener("click", function(){
@@ -145,12 +142,12 @@ function removeToDo(clickedElement){
   todoLIST[clickedElement.id].trash = true;
 }
 
-
 // eventlistener for the list
 list.addEventListener("click", function(event){
   const clickedElement = event.target; // return the clicked clickedElement inside list
-  const elementJob = clickedElement.attributes.job.value; // check or uncheck or trash
-  
+  const elementJob = clickedElement.attributes.che.value; // check or uncheck or trash
+  // var errorMes2 = document.querySelector(".errorMes2");
+  // errorMes2.innerHTML = clickedElement;
   if (elementJob == "checkValue") {
       checkTodo(clickedElement);
   } else if (elementJob == "removeValue") {
