@@ -4,7 +4,7 @@
 } */
 html {
   font-family:  'Chelsea Market';
-  line-height: 1.8;
+  line-height: 2.2;
   font-size: 1.1em;
   color: rgb(88, 88, 88)
 }
@@ -21,6 +21,10 @@ body {
   }
 }
 
+#nav-bar {
+  text-align: right;
+}
+
 #nav-bar li {
   list-style: none;
   float: left;
@@ -29,6 +33,10 @@ body {
 
 #nav-bar li a {
   text-decoration: none;
+}
+
+#bio {
+  margin-top: 60px;
 }
 
 h1, h3 {
@@ -42,7 +50,7 @@ h1, h3 {
 }
 
 .wrapper {
-  background-color: rgb(240, 240, 240);
+  /* background-color: rgb(240, 240, 240); */
   /* text-align: left;
   width: 90%;
   color: #474747;
@@ -70,15 +78,17 @@ max-width: 30%;
 }
 
 .info {
-  margin: 0px 30px;
+  margin: 0px 50px 0px 0px;
   width: 50%;
   flex: 1 1 300px;
   align-self: center;
 }
 
 .section {
-  width: 330px;
-  margin: 10px;
+  width: 290px;
+  margin: 20px ;
+  padding: 10px;
+  border: 1px solid rgb(216, 216, 216);
 }
 
 .heading {
