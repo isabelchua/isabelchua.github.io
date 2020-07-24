@@ -120,7 +120,7 @@ max-width: 30%;
 .img-front {
   width: 100%;
   height: auto;
-  max-height: 344px;
+  max-height: 381px;
   margin: 7vh 0 0px 0px;
 }
 
@@ -128,8 +128,11 @@ max-width: 30%;
 
 .info {
   margin: 0px 1em 0px 2em;
-  flex: 1 1 300px;
+  /* flex: 1 1 300px; */
+  display: flex;
   align-self: center;
+    width: 550px;
+      flex-direction: column;
 }
 
 .section {
@@ -244,7 +247,15 @@ a:hover {
 }
 
 .img-front {
+    display: flex;
   margin-top: 1em;
+  flex-direction: column;
+  min-width: 500px;
+}
+
+.info {
+    display: flex;
+  flex-direction: column;
 }
 
 .image-frame {
