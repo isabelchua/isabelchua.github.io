@@ -116,12 +116,19 @@ max-width: 30%;
   height: auto;
   margin: 3em 0px 0px 0px;
   max-height: 220px;
+  animation: fadein 1.5s;
 }
 
 .image-frame-front {
   width: 45%;
   display: flex;
   align-items: center;
+    animation: fadein 1.5s;
+}
+
+@keyframes fadein {
+  from { opacity: 0}
+  to   { opacity: 1}
 }
 
 .img-front {
@@ -142,6 +149,16 @@ max-width: 30%;
   width: 50%;
   flex-direction: column;
   /* align-content: stretch; */
+    animation: .7s ease-out 0s 1 slideInFromLeft;
+}
+
+@keyframes slideInFromLeft {
+  0% {
+    transform: translateX(-100%);
+  }
+  100% {
+    transform: translateX(0);
+  }
 }
 
 .section {
@@ -152,6 +169,7 @@ max-width: 30%;
   align-self: center;
   text-align: right;
   flex-direction: column;
+    animation: fadein 1.5s;
 }
 
 .text-left {
