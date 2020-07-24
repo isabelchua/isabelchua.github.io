@@ -127,8 +127,8 @@ max-width: 30%;
 .img-front {
   width: 100%;
   height: auto;
-  max-height: 381px;
-  max-width: 566px;
+  max-height: 344px;
+  max-width: 510px;
   margin: 2.6em 0 0px 0px;
   display: flex;
   justify-content: center;
@@ -284,7 +284,7 @@ a:hover {
 }
 
 .image-frame {
-  max-width: 65%;
+  max-width: 80%;
 }
 
 h1 {
