@@ -124,12 +124,7 @@ max-width: 30%;
   margin: 7vh 0 0px 0px;
 }
 
-.img-front {
-  width: 100%;
-  height: auto;
-  max-height: 763px;
-  margin: 7vh 0 0px 0px;
-}
+
 
 .info {
   margin: 0px 1em 0px 2em;
@@ -253,14 +248,14 @@ a:hover {
   width: 100% !important;
   display: flex;
   justify-content: center;
-
-  
-
 }
 
 .img-front {
-  width: 85%;
   margin-top: 1em;
+}
+
+.image-frame {
+  max-width: 58%;
 }
 h1 {
   margin: .5em 0 0 0;
@@ -290,7 +285,7 @@ h4 {
 
 #footera {
   font-size: .8em;
-  height: 10vh;
+  height: 6vh;
   display: flex;
   width: 70%;
   margin: 0 15% 0 15%;
@@ -307,4 +302,5 @@ h4 {
   order: 1;
   justify-content: center;
 }
+
 }
