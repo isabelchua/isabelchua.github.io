@@ -65,7 +65,7 @@ h3 {
 
 h4 {
   font-family: 'Montserrat', sans-serif;
-  font-size: 1.3em;
+  font-size: 1.1em;
   height: auto;
   color: #958BA5;
   font-weight: 700 !important;
@@ -115,14 +115,21 @@ max-width: 30%;
   width: 100%;
   height: auto;
   margin: 3em 0px 0px 0px;
-      max-height: 220px;
+  max-height: 220px;
+}
+
+.image-frame-front {
+  width: 45%;
+  display: flex;
+  align-items: center;
 }
 
 .img-front {
   width: 100%;
   height: auto;
   max-height: 381px;
-  margin: 7vh 0 0px 0px;
+  max-width: 566px;
+  margin: 2.6em 0 0px 0px;
   display: flex;
   justify-content: center;
 }
@@ -132,9 +139,9 @@ max-width: 30%;
   /* flex: 1 1 300px; */
   display: flex;
   align-self: center;
-  width: 45%;
-      flex-direction: column;
-      align-content: stretch;
+  width: 50%;
+  flex-direction: column;
+  /* align-content: stretch; */
 }
 
 .section {
@@ -221,7 +228,19 @@ a:hover {
   opacity: .5;
 }
 
-@media (max-width: 867px) {
+@media (max-width: 1170px) {
+.image-frame {
+  max-width: 50%;
+}
+
+.image-frame-front {
+  width: 40%;
+}
+
+
+}
+
+@media (max-width: 909px) {
 
   body {
   margin:0;
@@ -250,27 +269,32 @@ a:hover {
 }
 
 .img-front {
-    display: flex;
-  margin-top: 1em;
+  display: flex;
+  margin-top: 2em;
   flex-direction: column;
 }
 
+.image-frame-front {
+  width: 70%;
+}
+
+
 .info {
-    display: flex;
-  flex-direction: column;
+  width: 90%;
 }
 
 .image-frame {
-  max-width: 55%;
+  max-width: 65%;
 }
 
 h1 {
   margin: .5em 0 0 0;
   text-align: center;
+  font-size: 2.5em;
 }
 
 h4 {
-  font-size: 1.4em;
+  font-size: 1.2em;
   text-align: center;
 }
 
