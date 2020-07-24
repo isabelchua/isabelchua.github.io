@@ -113,6 +113,7 @@ max-width: 30%;
 
 .img {
   width: 100%;
+  max-width: 373px;
   height: auto;
   margin: 3em 0px 0px 0px;
   max-height: 220px;
