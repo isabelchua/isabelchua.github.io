@@ -19,7 +19,7 @@ body {
 }
 
 #nav-bar {
-	width: 570px;
+	width: 590px;
 	display: flex;
 	align-self: flex-end;
 }
@@ -77,7 +77,7 @@ body {
 .top {
 	padding: 0;
 	margin: 0;
-width: 920px !important;
+width: 940px !important;
 }
 
 .front {
@@ -85,11 +85,11 @@ width: 920px !important;
 
 }
 
-#logo {
+#logo a {
 	display: flex;
 	align-self: flex-start;
 	width: 200px;
-	margin: 1em 0 0 0;
+	margin: 1em 0 0 1.5em;
 }
 
 #logo a:hover {
