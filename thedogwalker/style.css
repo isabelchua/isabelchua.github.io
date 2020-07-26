@@ -365,6 +365,47 @@ padding: 4em 0;
 	margin: 0;
 	padding: 2em 0 22em 0 ;
 }
+
+#front-text {
+	display: flex;
+	flex-direction: column;
+	width: 400px;
+}
+
+.wrapper {
+	width: 100%;
+}
+
+.flexbox-container {
+	width: 100%;
+}
+
+.top {
+	padding: 0;
+	margin: 0;
+	width: 100% !important;
+}
+
+form {
+	display: flex;
+	flex-direction: column;
+	width: 100%;
+	align-items: center;
+}
+
+#sectioncol  {
+	flex-direction: column;
+}
+
+#testi {
+align-items: center;
+	flex-direction: column;
+}
+
+.testi-name {
+	align-self: center;
+
+}
 }
 
 
