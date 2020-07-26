@@ -124,7 +124,7 @@ max-width: 30%;
   width: 45%;
   display: flex;
   align-items: center;
-    animation: fadein 1.5s;
+  animation: fadein 1.5s;
 }
 
 @keyframes fadein {
@@ -220,23 +220,7 @@ max-width: 30%;
   transition: .3s;
 }
 
-#fb {
-  background-position: 0px 0px;
-}
 
-#ig {
-  background-position: -130px 0px;
-
-}
-
-#gh {
-  background-position: -195px 0px;
-
-}
-
-#in {
-  background-position: -65px 0px;
-}
 
 a {
   text-decoration: none;
