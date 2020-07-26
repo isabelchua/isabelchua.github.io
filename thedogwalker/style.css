@@ -27,7 +27,7 @@ body {
 .front-bg {
 
 	background: url(img/dog.png) no-repeat 28% 100%;
-
+  animation: fadein 1.5s;
 }
 
 .flexbox-container {
@@ -78,7 +78,10 @@ width: 940px !important;
 	font-size: 1.1em;
 }
 
-
+@keyframes fadein {
+  from { opacity: 0}
+  to   { opacity: 1}
+}
 
 h1,
 h2,
