@@ -14,17 +14,32 @@
 
         <body>
                 <div id="home-front">
+
                         <div class="flexbox-container">
                                 <div class="wrapper top">
-                                        <div id="logo"><a href=""><img src="img/logo.svg" /></a></div>
+
                                         <div class="nav-container">
-                                                <div id="nav-bar">
-                                                        <li><a href="./index.html">Home</a></li>
-                                                        <li><a href="#">Pricing</a></li>
-                                                        <li><a href="#">About</a></li>
-                                                        <li><a href="#">Contact</a></li>
-                                                </div>
+                                                <nav class="navbar">
+                                                        <div id="logo"><a href=""><img src="img/logo.svg" /></a></div>
+
+                                                        <a href="#" class="toggle-button">
+                                                        <span class="bar"></span>
+                                                        <span class="bar"></span>
+                                                        <span class="bar"></span>
+                                                        </a>
+
+                                                        <div class="navbar-links">
+                                                                <ul>
+                                                                        <li><a href="#">Home</a></li>
+                                                                        <li><a href="#">Pricing</a></li>
+                                                                        <li><a href="#">About</a></li>
+                                                                        <li><a href="#">Contact</a></li>
+                                                                </ul>
+                                                        </div>
+                                                </nav>
+                                                
                                         </div>
+
                                 </div>
                         </div>
                         <div class="flexbox-container front-bg">
@@ -186,5 +201,12 @@
                 </div>
 </div>
         </body>
+<script>
+const toggleButton = document.getElementsByClassName('toggle-button')[0]
+const navbarLinks = document.getElementsByClassName('navbar-links')[0]
 
+toggleButton.addEventListener('click', () => {
+  navbarLinks.classList.toggle('active')
+})
+</script>
 </html>
