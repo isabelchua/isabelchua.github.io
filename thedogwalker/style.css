@@ -48,7 +48,7 @@ body {
 	justify-content: center;
 	background: url(img/front-bg.svg) no-repeat  #92a2ad 0% 100%;
 	color: #FFF;
-	padding: 1em 0 0 0;
+	padding: .5em 0 0 0;
 	flex-direction: column;
 
 }
@@ -89,7 +89,13 @@ width: 920px !important;
 	display: flex;
 	align-self: flex-start;
 	width: 200px;
+	margin: 1em 0 0 0;
 }
+
+#logo a:hover {
+	opacity: 1;
+}
+
 
 #front-text {
 	display: flex;
@@ -138,6 +144,10 @@ transition: .4s;
 background: #f4f7fa;
 border-radius: 20%;
   opacity: 1;
+}
+
+.section h3 {
+	text-transform: uppercase;
 }
 
 .section {
