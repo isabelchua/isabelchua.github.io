@@ -329,7 +329,7 @@ padding: 4em 0;
 
 @media (max-width: 923px) {
 .front-bg {
-	background: url(img/dog.png) no-repeat 5% 100%;
+	background: url(img/dog.png) no-repeat 50% 100%;
 }
 
 .front {
@@ -339,9 +339,15 @@ padding: 4em 0;
 
 #front-text {
 	display: flex;
+text-align: center;
 	flex-direction: column;
 	width: 420px;
 	padding: 0 1em 0 0em;
+}
+
+h2 {
+	font-size: 1em;
+
 }
 
 .right {
