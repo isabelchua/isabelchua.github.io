@@ -78,6 +78,8 @@ width: 940px !important;
 	font-size: 1.1em;
 }
 
+
+
 h1,
 h2,
 h3,
@@ -341,13 +343,28 @@ padding: 4em 0;
 	display: flex;
 text-align: center;
 	flex-direction: column;
-	width: 420px;
+	width: 400px;
 	padding: 0 1em 0 0em;
 }
 
 h2 {
 	font-size: 1em;
+	margin: 1em 0 !important;
+line-height: 1em !important;
+}
 
+h1 {
+	margin: 0;
+}
+
+.front {
+	padding: 1em 0 22em 0 ;
+}
+
+#front-text p {
+	margin: 0;
+padding: 0;
+margin-block-start: 0  !important;
 }
 
 .right {
@@ -373,6 +390,7 @@ form {
 	display: flex;
 	flex-direction: column;
 	width: 100%;
+padding:  1em 0;
 	align-items: center;
 }
 
@@ -389,6 +407,13 @@ align-items: center;
 	align-self: center;
 
 }
+
+#testi-text p {
+    width: 90%;
+    margin: 1em 1em;
+}
+
+
 }
 
 
@@ -455,7 +480,6 @@ align-items: center;
     justify-content: space-between;
     width: 30px;
     height: 21px;
-	z-index: 1;
 }
 
 .toggle-button .bar {
