@@ -122,8 +122,10 @@ function addToDo(todoInput, id, checkValue, trash){
 
 // clear localstorage
 clear.addEventListener("click", function(){
+  if (confirm("Delete all todo items on the list?")) {
   localStorage.clear();
   location.reload();
+}
 });
 
 // check list

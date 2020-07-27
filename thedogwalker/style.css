@@ -1,18 +1,21 @@
 html {
+  box-sizing: border-box;
+}
+*, *:before, *:after {
+  box-sizing: inherit;
+}
+
+html {
 	font-family: 'Quicksand', sans-serif;
 	line-height: 2;
 	font-size: 1.3em;
 	color: #92a2ad;
 }
 
-
-
 body {
 	background-color: #FFF;
 	margin: 0;
 }
-
-
 
 #home-front {
 	display: flex;
@@ -21,11 +24,9 @@ body {
 	color: #FFF;
 	padding: .5em 0 0 0;
 	flex-direction: column;
-
 }
 
 .front-bg {
-
 	background: url(img/dog.png) no-repeat 28% 100%;
   animation: fadein 1.5s;
 }
@@ -42,7 +43,6 @@ body {
 	width: 1000px;
 	padding: 2em 0;
 	align-self: center;
-
 }
 
 .top {
@@ -53,7 +53,6 @@ width: 940px !important;
 
 .front {
 	display: flex;
-
 }
 
 #logo a {
@@ -66,7 +65,6 @@ width: 940px !important;
 #logo a:hover {
 	opacity: 1;
 }
-
 
 #front-text {
 	display: flex;
@@ -289,6 +287,7 @@ flex-direction: column;
   width: 100%;
 align-content: center;
 text-align: center;
+line-height: 1.3em;
 }
 
 .center {
@@ -358,9 +357,9 @@ text-align: center;
 }
 
 h2 {
-	font-size: 1em;
-	margin: 1em 0 !important;
-line-height: 1em !important;
+	font-size: 1.4em;
+	margin: .5em 0 !important;
+line-height: 1.5em !important;
 }
 
 h1 {
@@ -412,7 +411,7 @@ padding:  1em 0;
 #testi {
 align-items: center;
 	flex-direction: column;
-	padding: 1em 0;
+	padding: 0 0;
 }
 
 
