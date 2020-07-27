@@ -85,6 +85,12 @@ function endGame(){
   //Clear user input
   userInput.value = '';
   //Disable button
+
+
+      submit.classList.add("disabled");
+      //disableLetter(letterValue);
+ 
+
   userInput.setAttribute('disabled', '');
   //Display Start new Game Button
         p.innerHTML = `<h1 id="newGame">TRY AGAIN</h1>`
@@ -101,6 +107,7 @@ function newGame(){
       previousGuesses = [];
       //subth.classList.add('guessSubmit');
       numGuesses = 1;
+      submit.classList.remove("disabled");
       guessSlot.innerHTML = '';
       lowOrHi.innerHTML = '';
       remaining.innerHTML = `${numberFinal - numGuesses}  `;
