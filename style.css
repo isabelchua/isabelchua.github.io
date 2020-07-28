@@ -1,7 +1,3 @@
-/* *{
-  margin:0;
-  padding:0;
-} */
 html {
   font-family: 'Quicksand', sans-serif;
   line-height: 2;
@@ -25,7 +21,6 @@ body {
 
 #nav-bar li {
   list-style: none;
-
   /* margin: 1em 2em; */
 }
 
@@ -92,7 +87,7 @@ p {
   flex-flow: row;
   width: 1200px;
   flex-wrap: wrap;
-  justify-content: space-between;
+  justify-content: space-around;
   padding-bottom: 3.8em;
 }
 
@@ -127,6 +122,13 @@ max-width: 30%;
   animation: fadein 1.5s;
 }
 
+.image-frame-front2 {
+  width: 45%;
+  display: flex;
+  align-items: center;
+  animation: fadein 1.5s;
+}
+
 @keyframes fadein {
   from { opacity: 0}
   to   { opacity: 1}
@@ -138,6 +140,16 @@ max-width: 30%;
   max-height: 344px;
   max-width: 510px;
   margin: 2.6em 0 0px 0px;
+  display: flex;
+  justify-content: center;
+}
+
+.website {
+  width: 302px;
+  height: auto;
+  max-height: 453px;
+  max-width: 302px;
+  margin: 2.6em 0em 0px 5em;
   display: flex;
   justify-content: center;
 }
@@ -183,7 +195,6 @@ max-width: 30%;
   margin: 20px 0px;
   display: flex;
   justify-content: center;
-
 }
 
 
@@ -229,6 +240,10 @@ a {
 
 a:hover {
   opacity: .5;
+}
+
+.me {
+  margin: 2em 0 0 0;
 }
 
 @media (max-width: 1170px) {
@@ -279,6 +294,13 @@ a:hover {
 
 .image-frame-front {
   width: 70%;
+}
+
+
+.website {
+  width: 302px;
+  margin: 2.6em 0em 0px 0em;
+
 }
 
 
