@@ -2,7 +2,7 @@ html {
   font-family: 'Quicksand', sans-serif;
   line-height: 2;
   font-size: 1.2em;
-  color:#635772;
+  color: #635772;
 }
 
 body {
@@ -26,15 +26,15 @@ body {
 
 #nav-bar li a {
   text-decoration: none;
-    float: left;
+  float: left;
   padding: 1em 2em;
-    transition: .5s;
+  transition: .5s;
 }
 
 #nav-bar li a:hover {
   background-color: #f7f4fa;
   opacity: 1;
-  
+
 }
 
 #bio {
@@ -45,7 +45,7 @@ body {
 h1 {
   font-family: 'Montserrat', sans-serif;
   margin: 1.3em 0 0 0;
-  padding:0;
+  padding: 0;
   font-size: 2.6em;
   line-height: 1.3em;
 }
@@ -82,7 +82,8 @@ p {
   align-items: stretch;
 }
 
-.wrapper, .wrapper-head {
+.wrapper,
+.wrapper-head {
   display: flex;
   flex-flow: row;
   width: 1200px;
@@ -101,9 +102,9 @@ p {
 }
 
 #avatar {
-flex-grow: 1;
-min-width: 270px;
-max-width: 30%;
+  flex-grow: 1;
+  min-width: 270px;
+  max-width: 30%;
 }
 
 .img {
@@ -130,8 +131,13 @@ max-width: 30%;
 }
 
 @keyframes fadein {
-  from { opacity: 0}
-  to   { opacity: 1}
+  from {
+    opacity: 0
+  }
+
+  to {
+    opacity: 1
+  }
 }
 
 .img-front {
@@ -162,13 +168,14 @@ max-width: 30%;
   width: 50%;
   flex-direction: column;
   /* align-content: stretch; */
-    animation: .7s ease-out 0s 1 slideInFromLeft;
+  animation: .7s ease-out 0s 1 slideInFromLeft;
 }
 
 @keyframes slideInFromLeft {
   0% {
     transform: translateX(-100%);
   }
+
   100% {
     transform: translateX(0);
   }
@@ -182,7 +189,7 @@ max-width: 30%;
   align-self: center;
   text-align: right;
   flex-direction: column;
-    animation: fadein 1.5s;
+  animation: fadein 1.5s;
 }
 
 .text-left {
@@ -242,18 +249,34 @@ a:hover {
   opacity: .5;
 }
 
+
+
 .me {
   margin: 2em 0 0 0;
+  background: url(img/me.jpg);
+  background-size: cover;
+  width: 100%;
+  position: relative;
+  height: 100%;
+  min-width: 506px;
+  background-position: center;
+  background-repeat: no-repeat;
 }
 
 @media (max-width: 1170px) {
-.image-frame {
-  max-width: 50%;
-}
+  .image-frame {
+    max-width: 50%;
+  }
 
-.image-frame-front {
-  width: 40%;
-}
+  .me {
+    min-width: 506px;
+    min-height: 350px;
+  }
+
+
+  .image-frame-front {
+    width: 40%;
+  }
 
 
 }
@@ -261,9 +284,10 @@ a:hover {
 @media (max-width: 909px) {
 
   body {
-  margin:0;
-  padding:0;
+    margin: 0;
+    padding: 0;
   }
+
 
   .section {
     order: 2;
@@ -276,87 +300,89 @@ a:hover {
     font-size: 1em;
   }
 
-  #nav-bar li a{
-  padding: 1em 1.2em !important;
-}
+  #nav-bar li a {
+    padding: 1em 1.2em !important;
+  }
 
-.wrapper, .wrapper-head {
-  width: 100% !important;
-  display: flex;
-  justify-content: center;
-}
+  .wrapper,
+  .wrapper-head {
+    width: 100% !important;
+    display: flex;
+    justify-content: center;
+  }
 
-.img-front {
-  display: flex;
-  margin-top: 2em;
-  flex-direction: column;
-}
+  .img-front {
+    display: flex;
+    margin-top: 2em;
+    flex-direction: column;
+  }
 
-.image-frame-front {
-  width: 70%;
-}
-
-
-.website {
-  width: 302px;
-  margin: 2.6em 0em 0px 0em;
-
-}
+  .image-frame-front {
+    width: 70%;
+  }
 
 
-.info {
-  width: 90%;
-}
+  .website {
+    width: 302px;
+    margin: 2.6em 0em 0px 0em;
 
-.image-frame {
-  max-width: 80%;
-}
+  }
 
-h1 {
-  margin: .5em 0 0 0;
-  text-align: center;
-  font-size: 2.5em;
-}
 
-h4 {
-  font-size: 1.2em;
-  text-align: center;
-}
+  .info {
+    width: 90%;
+  }
 
-.info {
-  text-align: center;
-  margin: 0 1.8em 0 1.8em;
-}
+  .image-frame {
+    max-width: 80%;
+  }
 
-.section {
-  text-align: center;
-}
 
-.foot-wrapper {
-  display: flex;
-  width: 100%;
-  flex-direction: column;
-  justify-content: center;
-}
+  h1 {
+    margin: .5em 0 0 0;
+    text-align: center;
+    font-size: 2.5em;
+  }
 
-#footera {
-  font-size: .8em;
-  height: 6vh;
-  display: flex;
-  width: 70%;
-  margin: 0 15% 0 15%;
-  order: 2;
-  justify-content: center;
-  text-align: center;
-}
+  h4 {
+    font-size: 1.2em;
+    text-align: center;
+  }
 
-#footerb {
-  height: 60px;
-  display: flex;
-  float: none;
-  width: auto;
-  order: 1;
-  justify-content: center;
-}
+  .info {
+    text-align: center;
+    margin: 0 1.8em 0 1.8em;
+  }
+
+  .section {
+    text-align: center;
+  }
+
+  .foot-wrapper {
+    display: flex;
+    width: 100%;
+    flex-direction: column;
+    justify-content: center;
+  }
+
+  #footera {
+    font-size: .8em;
+    height: 6vh;
+    display: flex;
+    width: 70%;
+    margin: 0 15% 0 15%;
+    order: 2;
+    justify-content: center;
+    text-align: center;
+  }
+
+  #footerb {
+    height: 60px;
+    display: flex;
+    float: none;
+    width: auto;
+    order: 1;
+    justify-content: center;
+  }
 
 }
