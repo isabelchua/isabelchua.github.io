@@ -351,6 +351,15 @@ a:hover {
 		text-align: center;
 	}
 
+	.proj-wrap {
+		padding: 0 0% 0 13%;
+		text-align: left;
+	}
+
+	ul {
+		padding: 0 0 0 30px;
+	}
+
 	.foot-wrapper {
 		display: flex;
 		width: 100%;
