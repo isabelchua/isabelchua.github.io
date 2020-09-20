@@ -1,8 +1,14 @@
 html {
-	font-family: 'Quicksand', sans-serif;
+	font-family: "Quicksand", sans-serif;
 	line-height: 2;
 	font-size: 1.2em;
-	color: #635772;
+	/* color: #635772; */
+	--web-color: #635772;
+	--gray-color: #8a8a8a;
+	--blue-color: #5b859e;
+	margin: 0;
+	padding: 0;
+	color: var(--gray-color);
 }
 
 body {
@@ -42,7 +48,7 @@ body {
 }
 
 h1 {
-	font-family: 'Montserrat', sans-serif;
+	font-family: "Montserrat", sans-serif;
 	margin: 1.3em 0 0 0;
 	padding: 0;
 	font-size: 2.6em;
@@ -50,7 +56,7 @@ h1 {
 }
 
 h3 {
-	font-family: 'Montserrat', sans-serif;
+	font-family: "Montserrat", sans-serif;
 	font-size: 1.4em;
 	height: auto;
 	font-weight: 700 !important;
@@ -58,7 +64,7 @@ h3 {
 }
 
 h4 {
-	font-family: 'Montserrat', sans-serif;
+	font-family: "Montserrat", sans-serif;
 	font-size: 1.1em;
 	height: auto;
 	color: #958ba5;
@@ -121,6 +127,10 @@ a {
 
 a:hover {
 	opacity: 1;
+}
+
+a.link {
+	color: #4ba2bd;
 }
 
 .image-frame-front {
@@ -218,6 +228,81 @@ a:hover {
 	/* flex-flow: row wrap; */
 }
 
+.portfolio {
+	color: var(--gray-color);
+}
+
+.row {
+	display: flex;
+	flex-direction: column;
+}
+
+.projects {
+	display: inline-flex;
+	flex-flow: row;
+	margin: 18px 0 30px 0;
+	padding-bottom: 30px;
+	border-bottom: 1px solid #eee;
+}
+
+.title-img h4 {
+	color: var(--blue-color);
+	padding: 20px 0;
+}
+
+.proj-img {
+	float: left;
+	width: 440px;
+}
+
+.proj-img img {
+	border-radius: 10px;
+	border: 3px solid var(--blue-color);
+}
+
+.proj-desc h3 {
+	font-size: 1.1em;
+	margin: 0 0 8px 0;
+}
+
+.proj-desc ul {
+	margin: 0 0 17px;
+}
+.proj-desc p {
+	padding: 0 0 22px;
+}
+
+.proj-desc {
+	padding-top: 70px;
+	line-height: 1.4em;
+	float: left;
+	width: 48%;
+	margin-left: 40px;
+}
+
+.proj-desc ul {
+	padding-left: 23px;
+}
+
+.proj-desc li {
+	padding-left: 20px;
+}
+
+.proj-desc a {
+	color: #fff;
+	/* margin-top: 10px; */
+	padding: 10px 50px;
+	background-color: var(--blue-color);
+	border-radius: 30px;
+}
+
+a.code {
+	color: var(--blue-color);
+	background-color: #ffffff;
+	border: 2px solid var(--blue-color);
+	margin-left: 30px;
+}
+
 #footera {
 	float: left;
 	width: 55%;
@@ -246,7 +331,7 @@ a:hover {
 
 a {
 	text-decoration: none;
-	color: rgb(88, 88, 88);
+	color: var(--gray-color);
 }
 
 a:hover {
