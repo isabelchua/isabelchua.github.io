@@ -383,6 +383,7 @@ a:hover {
 	min-width: 506px;
 	background-position: center;
 	background-repeat: no-repeat;
+	border-radius: 2px;
 }
 
 @media (max-width: 1170px) {
