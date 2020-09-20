@@ -87,6 +87,13 @@ p {
 	align-items: stretch;
 }
 
+.flexbox-container-left-align {
+	display: flex;
+	justify-content: flex-start !important;
+
+	align-items: stretch;
+}
+
 .wrapper,
 .wrapper-head {
 	display: flex;
@@ -99,6 +106,12 @@ p {
 
 .wrapper {
 	width: 1000px !important;
+}
+
+.wrapper-header {
+	display: flex;
+	width: 1030px;
+	justify-content: flex-start;
 }
 
 .foot-wrapper {
@@ -248,9 +261,18 @@ a.link {
 .projects-sub {
 	display: flex;
 	flex-direction: column;
-	margin: 18px 0 30px 0;
-	padding-bottom: 30px;
+	margin: 18px 0 20px 0;
+	padding-bottom: 50px;
 	border-bottom: 1px solid #eee;
+}
+
+.proj-desc-sub li {
+	list-style: square;
+	padding-left: 30px;
+}
+
+.proj-desc-sub ul {
+	padding-bottom: 20px;
 }
 
 .title-img h4 {
