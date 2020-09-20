@@ -245,6 +245,14 @@ a.link {
 	border-bottom: 1px solid #eee;
 }
 
+.projects-sub {
+	display: flex;
+	flex-direction: column;
+	margin: 18px 0 30px 0;
+	padding-bottom: 30px;
+	border-bottom: 1px solid #eee;
+}
+
 .title-img h4 {
 	color: var(--blue-color);
 	padding: 20px 0;
@@ -280,6 +288,10 @@ a.link {
 	margin-left: 40px;
 }
 
+.proj-desc-sub {
+	padding-top: 5px;
+}
+
 .proj-desc ul {
 	padding-left: 23px;
 }
@@ -288,7 +300,8 @@ a.link {
 	padding-left: 20px;
 }
 
-.proj-desc a {
+.proj-desc a,
+.proj-desc-sub a {
 	color: #fff;
 	/* margin-top: 10px; */
 	padding: 10px 50px;
