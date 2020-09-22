@@ -290,6 +290,15 @@ a.link {
 	border: 3px solid var(--blue-color);
 }
 
+.proj-desc h4 {
+	margin: 20px 0;
+}
+
+.title-img-design img {
+	border-radius: 10px;
+	border: none;
+}
+
 .proj-desc h3 {
 	font-size: 1.1em;
 	margin: 0 0 8px 0;
