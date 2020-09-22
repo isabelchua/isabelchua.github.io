@@ -294,9 +294,14 @@ a.link {
 	margin: 20px 0;
 }
 
+.title-img-design {
+	display: flex;
+}
+
 .title-img-design img {
-	border-radius: 10px;
-	border: none;
+	border: 1px solid rgb(235, 235, 235);
+	border-radius: 12px;
+	margin-left: 20px;
 }
 
 .proj-desc h3 {
