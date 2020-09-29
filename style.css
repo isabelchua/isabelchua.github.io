@@ -495,8 +495,32 @@ a:hover {
 		text-align: left;
 	}
 
+	.proj-wrap img {
+		display: flex;
+
+		margin: 0 auto;
+	}
+
 	ul {
 		padding: 0 0 0 30px;
+	}
+
+	.projects {
+		display: flex;
+		flex-direction: column;
+	}
+
+	.title-img h4 {
+		text-align: left;
+	}
+
+	.proj-desc {
+		width: 80%;
+	}
+
+	.title-img-design {
+		display: flex;
+		flex-direction: column;
 	}
 
 	.foot-wrapper {
@@ -525,4 +549,7 @@ a:hover {
 		order: 1;
 		justify-content: center;
 	}
+}
+
+@media (max-width: 709px) {
 }
