@@ -510,6 +510,11 @@ a:hover {
 		flex-direction: column;
 	}
 
+	.projects h4 {
+		margin-top: 0;
+		color: var(--gray-color);
+	}
+
 	.title-img h4 {
 		text-align: left;
 	}
