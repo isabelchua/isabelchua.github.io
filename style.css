@@ -294,14 +294,25 @@ a.link {
 	margin: 20px 0;
 }
 
-.title-img-design {
+.title-img-design, .title-img-design-clay {
 	display: flex;
+	justify-content: space-between;
 }
 
 .title-img-design img {
 	border: 1px solid rgb(235, 235, 235);
 	border-radius: 12px;
 	margin-left: 20px;
+}
+
+.title-img-design-clay img {
+	border: 1px solid rgb(235, 235, 235);
+	border-radius: 20px;
+	margin-left: 15px;
+	width: 300px;
+	height: auto;
+	flex: 1 1 0;
+	margin: 0 5px;
 }
 
 .mobile-mockup img {

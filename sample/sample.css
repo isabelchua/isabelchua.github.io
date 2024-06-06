@@ -1,0 +1,108 @@
+or
+
+div ~ p {
+background-color: pink;
+}
+
+p ~ div{
+background-color:yellow;
+font-style:italic;
+}
+.first + div {
+background-color:blue;
+color:white;
+}
+.first p {
+background-color:lightgreen;
+color:white;
+}
+
+or
+
+div ~ p{
+background-color: pink;
+}
+
+p + div{
+background-color:yellow;
+font-style:italic;
+}
+
+first ~ div{
+background-color:blue;
+color:white;
+}
+
+first p{
+background-color:lightgreen;
+color:white;
+}
+or
+
+div ~ p{
+background-color: pink;
+}
+p + div{
+background-color:yellow;
+font-style:italic;
+}
+first + div{
+background-color:blue;
+color:white;
+}
+first p{
+background-color:lightgreen;
+color:white;
+}
+or
+p ~ div{
+background-color: pink;
+}
+p + div{
+background-color:yellow;
+font-style:italic;
+}
+.first + div{
+background-color:blue;
+color:white;
+}
+.first p{
+background-color:lightgreen;
+color:white;
+}
+or
+
+div ~ p {
+background-color: pink;
+}
+div + p{
+background-color:yellow;
+font-style:italic;
+}
+.first + div{
+background-color:blue;
+color:white;
+}
+.first p{
+background-color:lightgreen;
+color:white;
+}
+
+div ~ p {
+	background-color: pink;
+	}
+	
+	p + div{
+	background-color:yellow;
+	font-style:italic;
+	}
+	
+	.first + div {
+	background-color:blue;
+	color:white;
+	  }
+	
+	.first p {
+	background-color:lightgreen;
+	color:white;
+	}
